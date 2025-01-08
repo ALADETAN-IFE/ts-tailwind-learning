@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Counter</title>
+  </head>
+  <body
+    class="box-border bg-blue-100 relative h-screen flex justify-center items-center"
+  >
+    <div
+      class="bg-white p-8 rounded-md w-96 h-2/3 flex flex-col justify-between items-center gap-10"
+    >
+      <div
+        class="rounded-lg bg-amber-400 w-full h-5/6 flex items-center justify-center text-6xl"
+        id="counter"
+        aria-live="polite"
+      >
+        0
+      </div>
+      <div class="flex justify-between w-4/5 h-1/6 gap-10 text-3xl">
+        <button
+          class="bg-slate-200 rounded w-2/4"
+          id="add_btn"
+          aria-label="Add to counter"
+        >
+          +
+        </button>
+        <button
+          class="bg-slate-200 rounded w-2/4"
+          id="subtract_btn"
+          aria-label="Subtract from counter"
+        >
+          -
+        </button>
+      </div>
+    </div>
+    <script src="./typeScript.js"></script>
+  </body>
+  <!-- cd "Week 1"/Projects/"Counter App" -->
+  <!-- tsc --watch -->
+  <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+</html>
